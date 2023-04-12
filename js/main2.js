@@ -17,10 +17,14 @@ function subtract () {
 	 subEl.textContent = "Sum: " + result;
 }
 
-function divede () {
-	 
+let divEl = document.getElementById("sum-el");
+function divide () {
+	 let result = num1 / num2;
+	 divEl.textContent = "Sum: " + result;
 }
 
+let multEl = document.getElementById("sum-el");
 function multiply () {
-	 
+	 let result = num1 * num2;
+	 multEl.textContent = "Sum: " + result;
 }
