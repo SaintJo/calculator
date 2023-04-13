@@ -18,3 +18,9 @@ if (sum <= 20) {
 	message = ("You're out of the game!");
 	isAlive = false;
 }
+
+// Create a function startGame()
+
+function startGame () {
+	
+}
