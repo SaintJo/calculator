@@ -23,4 +23,7 @@ button {
 	height: 40px;
 	width: 150px;
 	color: black;
+	font-weight: bold;
+	border-radius: 2px;
+	border: none;
 }
