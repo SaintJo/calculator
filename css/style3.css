@@ -17,3 +17,10 @@ h1 {
 p {
 	color: goldenrod;
 }
+
+button {
+	background: goldenrod;
+	height: 40px;
+	width: 150px;
+	color: black;
+}
