@@ -14,6 +14,7 @@ let cardsEl = document.getElementById("cards-el");
 // Create a function startGame()
 
 function startGame () {
+	cardsEl.textContent = "Cards: " + firstCard + "" + secondCard;
 	sumEL.textContent ="Sum: " + sum;
 	if (sum <= 20) {
 		message = ("Do you want to draw a new card?");
