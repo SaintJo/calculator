@@ -20,9 +20,12 @@ function startGame() {
 function renderGame () {
 	
 	// render out firstCard and secondCard
-	cardsEl.textContent = "Cards: " + cards[0] + "" + cards[1];
+	cardsEl.textContent = "Cards: ";
 	
-	// render all the cards we have
+	// Create a for loop that renders out all the cards instead of just two
+	for (var i = 0; i < cards.length; i++) {
+		cardsEl.textContent += cards[i] + " ";
+	}
 	sumEL.textContent ="Sum: " + sum;
 	if (sum <= 20) {
 		message = ("Do you want to draw a new card?");
