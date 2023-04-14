@@ -1,7 +1,7 @@
 // Create two variabales, firstCard and secondCard.
 
-let firstCard = 10;
-let secondCard = 11;
+let firstCard = getRandomCard();
+let secondCard = getRandomCard();
 let cards = [firstCard, secondCard];
 let sum = firstCard + secondCard;
 let hasBlackJack = false;
@@ -10,6 +10,11 @@ let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEL = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
+
+// Create a function, getRandomCard(), that always returns the 5.
+function getRandomCard () {
+	return 5;
+}
 
 // Create a new function called startGame() that calls renderGame()
 function startGame() {
@@ -42,7 +47,7 @@ function renderGame () {
 
 // Create a function called newCard()
 function newCard() {
-	let card = 7;
+	let card = getRandomCard();
 	sum += card;
 // Push the card to the cards Array
 	cards.push(card);
