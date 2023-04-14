@@ -1,9 +1,8 @@
 // Create two variabales, firstCard and secondCard.
 
-let firstCard = getRandomCard();
-let secondCard = getRandomCard();
-let cards = [firstCard, secondCard];
-let sum = firstCard + secondCard;
+
+let cards = [];
+let sum = 0;
 let hasBlackJack = false;
 let isAlive = true;
 let message = "";
@@ -25,6 +24,12 @@ function getRandomCard () {
 
 // Create a new function called startGame() that calls renderGame()
 function startGame() {
+	isAlive = true;
+
+	let firstCard = getRandomCard();
+	let secondCard - getRandomCard();
+	cards = [firstCard, secondCard];
+	sum = firstCard + secondCard;
 	renderGame();
 }
 
