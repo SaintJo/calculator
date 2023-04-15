@@ -8,6 +8,16 @@ let messageEl = document.getElementById("message-el");
 let sumEL = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 
+let player {
+	 name: "Van",
+	 chips: 123;
+}
+
+
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = player.name + ": $" + player.chips;
+
 // Create a function, getRandomCard(), that always returns the 5.
 function getRandomCard () {
 	let randomNumber = Math.floor(Math.random() * 13) + 1;
